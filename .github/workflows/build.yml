@@ -27,3 +27,9 @@ jobs:
     # Runs a single command using the runners shell
     - name: Run a one-line script
       run: ./build.sh
+    
+    - name: Upload .so file
+      uses: actions/upload-artifact@v1
+      with:
+          name: cpp_exception_interposer.so
+          path: cpp_exception_interposer.so
